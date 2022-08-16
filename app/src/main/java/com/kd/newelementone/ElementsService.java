@@ -92,10 +92,14 @@ public class ElementsService extends Service {
         }else{
             fx = "西风";
         }
-        fs =isNum(ss[2])?ss[2]:"3";
+        if (isNum(ss[2])) {
+            fs = String.valueOf(Float.parseFloat(ss[2])/10);
+        }else{
+            fs = "1.2";
+        }
         js =isNum(ss[3])?ss[3]:"0";
         if (isNum(ss[4])) {
-           wd = String.valueOf(Integer.parseInt(ss[4])/10);
+           wd = String.valueOf(Float.parseFloat(ss[4])/10);
         }else{
             wd = "--";
         }
@@ -211,7 +215,7 @@ public class ElementsService extends Service {
                 public void run() {
                     try {
                         if (uart != null) {
-                            uart.write("/dev/ttyMT3", new byte[]{0x47, 0x54, 0x45, 0x44, 0x45, 0x21});//, 0x5c, 0x72, 0x5c, 0x6e
+                            uart.write(port, new byte[]{0x47, 0x54, 0x45, 0x44, 0x45, 0x21});//, 0x5c, 0x72, 0x5c, 0x6e
                             Log.i("TAG_uart", "发送  GETSECDATA!======================");
                         }
                         Thread.sleep(10*1000);
