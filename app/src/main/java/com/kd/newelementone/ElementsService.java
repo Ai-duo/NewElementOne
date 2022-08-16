@@ -196,7 +196,7 @@ public class ElementsService extends Service {
     //能见度
     String njd = "--";//26
     static String WEA;
-    String port = "/dev/ttyMT3";//,/dev/ttysWK2   /dev/ttyMT3
+    String port = "/dev/ttysWK2";//,/dev/ttysWK2   /dev/ttyMT3
     String port1 = "/dev/ttysWK2";
     //判断是否重启,每十分钟判断一次sendCount与currentCount的值，如果两者相等就重起；
     int sendCount = 0, currentCount = -1;
