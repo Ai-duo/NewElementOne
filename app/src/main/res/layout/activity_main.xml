@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="tf"
+            type="android.graphics.Typeface" />
+
+        <variable
+            name="time"
+            type="String" />
+
+        <variable
+            name="elements"
+            type="com.kd.newelementone.Elements" />
+    </data>
+
+    <LinearLayout
+        android:background="#000"
+        android:layout_width="192px"
+        android:layout_height="96px"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+        <TextView
+            android:gravity="center"
+            setExtraTypeface="@{tf}"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:text="@{time}"
+            android:textColor="#f00"
+            android:textSize="@dimen/textSize" />
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:paddingLeft="@dimen/paddingLeft"
+                    android:gravity="center_vertical"
+                    setExtraTypeface="@{tf}"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:text="@{`温度：`+elements.wd+`℃`}"
+                    android:textColor="#f00"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:paddingLeft="@dimen/paddingLeft"
+                    android:gravity="center_vertical"
+                    setExtraTypeface="@{tf}"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:text="@{`湿度：`+elements.sd+`%`}"
+                    android:textColor="#f00"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:paddingLeft="@dimen/paddingLeft"
+                    android:gravity="center_vertical"
+                    setExtraTypeface="@{tf}"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:text="@{`雨量：`+elements.js+`mm`}"
+                    android:textColor="#f00"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:paddingLeft="@dimen/paddingLeft"
+                    android:gravity="center_vertical"
+                    setExtraTypeface="@{tf}"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:text="@{`风速：`+elements.fs+`m/s`}"
+                    android:textColor="#f00"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:paddingLeft="@dimen/paddingLeft"
+                    android:gravity="center_vertical"
+                    setExtraTypeface="@{tf}"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:text="@{`风向：`+elements.fx}"
+                    android:textColor="#f00"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    setExtraTypeface="@{tf}"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
