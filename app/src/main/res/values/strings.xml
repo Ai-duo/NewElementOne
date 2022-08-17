@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">NewElementOne</string>
     <dimen name="textSize">14px</dimen>
-    <dimen name="paddingLeft">5px</dimen>
+    <dimen name="paddingLeft">0px</dimen>
 </resources>

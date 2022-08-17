@@ -52,7 +52,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0px"
                     android:layout_weight="1"
-                    android:text="@{`温度：`+elements.wd+`℃`}"
+                    android:text="@{`温度:`+elements.wd+`℃`}"
                     android:textColor="#f00"
                     android:textSize="@dimen/textSize" />
 
@@ -63,7 +63,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0px"
                     android:layout_weight="1"
-                    android:text="@{`湿度：`+elements.sd+`%`}"
+                    android:text="@{`湿度:`+elements.sd+`%`}"
                     android:textColor="#f00"
                     android:textSize="@dimen/textSize" />
 
@@ -74,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0px"
                     android:layout_weight="1"
-                    android:text="@{`雨量：`+elements.js+`mm`}"
+                    android:text="@{`雨量:`+elements.js+`mm`}"
                     android:textColor="#f00"
                     android:textSize="@dimen/textSize" />
             </LinearLayout>
@@ -92,7 +92,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0px"
                     android:layout_weight="1"
-                    android:text="@{`风速：`+elements.fs+`m/s`}"
+                    android:text="@{`风速:`+elements.fs+`m/s`}"
                     android:textColor="#f00"
                     android:textSize="@dimen/textSize" />
 
@@ -103,7 +103,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0px"
                     android:layout_weight="1"
-                    android:text="@{`风向：`+elements.fx}"
+                    android:text="@{`风向:`+elements.fx}"
                     android:textColor="#f00"
                     android:textSize="@dimen/textSize" />
 

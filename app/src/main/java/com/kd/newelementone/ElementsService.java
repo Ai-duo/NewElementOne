@@ -215,7 +215,7 @@ public class ElementsService extends Service {
                 public void run() {
                     try {
                         if (uart != null) {
-                            uart.write(port, new byte[]{0x47, 0x54, 0x45, 0x44, 0x45, 0x21});//, 0x5c, 0x72, 0x5c, 0x6e
+                            uart.write(port,"GETSECDATA!\r\n".getBytes());//, 0x5c, 0x72, 0x5c, 0x6e
                             Log.i("TAG_uart", "发送  GETSECDATA!======================");
                         }
                         Thread.sleep(10*1000);
